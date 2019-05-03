@@ -1,0 +1,316 @@
+.header {
+    height: 60px;
+    background-color: #f1f1f1;
+}
+#dropDown{
+    font-size: 20px;
+    color: #6d6d6d;
+    cursor: pointer;
+}
+.avatar {
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+
+}
+.avatar2 {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    cursor: pointer;
+}
+.avatar3 {
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+}
+.trn {
+    font-size: 22px;
+    color: #dd4b39;
+    padding: 14px 28px;
+    position: relative;
+    border-bottom: 1px solid #e5e5e5;
+    height: 59px;
+}
+.btn-gray {
+    background-color: #f2f2f2;
+    border: 1px #dddddd solid;
+
+}
+.btn-gray:hover
+{
+    border: 1px #bbbbbb solid;
+
+}
+.footerLinks {
+    color: #757575;
+}
+.footerLinks:hover{
+    color: #757575;
+}
+.footer {
+    height: 49px;
+    background-color: #efefef;
+    position: fixed;
+    bottom: 0;
+    border-top: 0.5px #757575d6 solid;
+}
+
+/***************************    middle Page    *************************/
+#l1 {
+    resize: none;
+    border-radius: 1px;
+}
+#l2 {
+    resize: none;
+    border-radius: 1px;
+    background-color: #f5f5f5;
+}
+#en1, #en2, #fa1, #fa2 {
+    font-weight: bold;
+    color: #433f3f;
+    size: 13px;
+}
+#en2, #fa1 {
+    margin-left: -6px;
+}
+
+#en1:focus, #en2:focus, #fa1:focus, #fa1:focus {
+    outline: none;
+}
+#translate {
+    font-weight: bold;
+    size: 13px;
+    margin-left: 20px;
+}
+.btn {
+    border-radius: 2px;
+}
+
+/***************************    colors    *************************/
+.gray {
+    color: #cccccc;
+}
+/***************************    Sizes    *************************/
+.f-7 {
+    font-size: 7px;
+}.f-11 {
+    font-size: 11.5px;
+}
+.f-13 {
+    font-size: 13px;
+}
+.right {
+    position: absolute;
+    right: 15px;
+}
+
+/***************************    Popup    *************************/
+/* Popup box BEGIN */
+.hover_bkgr_fricc{
+    background:rgba(0,0,0,.4);
+    cursor:pointer;
+    display:none;
+    height:100%;
+    position:fixed;
+    text-align:center;
+    top:0;
+    width:100%;
+    z-index:10000;
+}
+.hover_bkgr_fricc .helper{
+    display:inline-block;
+    height:100%;
+    vertical-align:middle;
+}
+.hover_bkgr_fricc > div {
+    background-color: #fff;
+    box-shadow: 10px 10px 60px #555;
+    display: inline-block;
+    height: 630px;
+    max-width: 551px;
+    min-height: 100px;
+    vertical-align: middle;
+    width: 350px;
+    position: relative;
+    padding: 15px 5%;
+}
+.popupCloseButton {
+    position: absolute;
+    bottom: 0;
+    padding: 10px;
+    height: 50px;
+    font-size: 14px;
+    background-color: white;
+}
+.popupCloseButton:hover {
+    background-color: #ececec;
+}
+.popupSendButton {
+    position: absolute;
+    bottom: 0;
+    right: 27px;
+    padding: 10px;
+    height: 50px;
+    font-size: 15px;
+    color: #4486f4;
+    background-color: white;
+}
+.popupSendButton:hover {
+    background-color: #ececec;
+}
+#popupTextarea {
+    border: none;
+    resize: none;
+    position: absolute;
+    height: 200px;
+    left: 0;
+    top: 66px;
+}
+#popupTextarea:focus{
+    outline: none;
+}
+#popupText {
+    font-size: 12px;
+    position: absolute;
+    top: 462px;
+    left: 3px;
+    text-align: left;
+    height: 200px;
+}
+#popupImg {
+    width: 350px;
+    position: absolute;
+    top: 250px;
+    left: 0;
+    height: 200px;
+}
+.trigger_popup_fricc {
+    cursor: pointer;
+    display: inline-block;
+    font-weight: bold;
+}
+/* Popup box BEGIN */
+.pop-header {
+    position: absolute;
+    left:0;
+    top: 0;
+    padding: 10px;
+    height: 50px;
+    width: 350px;
+    background-color: #607d8b;
+    font-size: 20px;
+    color: white;
+    text-align: left;
+}
+/***************************    Avatar DialogBox    *************************/
+.dialogBox {
+    padding: 20px;
+    position: absolute;
+    top:56px;
+    right:21px;
+    z-index: 2;
+    width: 310px;
+    height: 340px;
+    border: 0.5px #e1e1e1 solid;
+    background-color: #fff;
+    display: none;
+}
+.userName {
+    position: absolute;
+    top: 27px;
+    font-size: 13px;
+    width: 150px;
+}
+.acc-btn {
+    position: absolute;
+    top: 85px;
+}
+#addAcc, #signup{
+    color: #676767;
+    background-color: #f8f8f8;
+    width: 110px;
+    height: 36px;
+    border: 1px #c6c6c6 solid;
+}
+#addAcc:hover, #signup:hover {
+    background-color: white;
+}
+.avatarItem1{
+    position: absolute;
+    left: 0;
+    top: 153px;
+    width: 308px;
+    height: 65px;
+    padding: 10px;
+    background-color: #f5f5f5;
+    border-top: 1px #c4c4c4 solid;
+    border-bottom: 1px #c4c4c4 solid;
+}
+.avatarItem2{
+    position: absolute;
+    left: 0;
+    top: 218px;
+    width: 308px;
+    height: 65px;
+    padding: 10px;
+    background-color: #f5f5f5;
+    border-bottom: 1px #c4c4c4 solid;
+}
+.avatarFooter{
+    position: absolute;
+    left: 0;
+    top: 283px;
+    width: 308px;
+    height: 55px;
+    padding: 0 10px;
+    background-color: #f5f5f5;
+}
+.avatarItem1:hover, .avatarItem2:hover {
+    background-color:  #eeeeee;
+}
+/***************************   DropDown    *************************/
+.dropdownMenu {
+    overflow: auto;
+    padding: 0 20px 20px 20px;
+    position: absolute;
+    top:56px;
+    right:21px;
+    z-index: 2;
+    width: 310px;
+    height: 604px;
+    border: 1px #e1e1e1 solid;
+    background-color: #fff;
+    /*display: none;*/
+}
+.item {
+    margin-top: 20px;
+
+}
+.img-border {
+    width: 85px;
+    height: 85px;
+    cursor: pointer;
+}
+.img-border:hover {
+    border: 1px #e0e0e0 solid ;
+}
+.more {
+    margin-left: -5px;
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    height: 43px;
+    width: 100%;
+    z-index: 3;
+    background-color: #e5e5e5;
+    cursor: pointer;
+}
+
+.footerdropDownText > a {
+    font-size: 12px;
+    width: 100%;
+    padding-left: 77px;
+    color: #000;
+}

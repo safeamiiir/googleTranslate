@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <link rel="stylesheet" href="CSS/bootstrap.css">
+    <link rel="stylesheet" href="CSS/index.css">
+    <link  href="IMG/favicon.ico"  rel="shortcut icon" />
+    <title>Google Translate Sample</title>
+</head>
+<body>
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="header d-flex align-items-center col-12 justify-content-between">
+            <span class="p-3">
+                <img class="text-center" src="IMG/googleLogo.svg" width="90" alt="googleLogo">
+            </span>
+            <div>
+                <span class="p-3">
+                    <i class="fas fa-th" id="dropDown"></i>
+                    <span class="dropdownMenu">
+                        <span class="container">
+                            <span class="row">
+                                <span class="col-4 item" id="start"> <img src="IMG/1.png" class="img-border" alt="img"></span>
+                                <span class="col-4 item"> <img src="IMG/2.png" class="img-border" alt="img"></span>
+                                <span class="col-4 item"> <img src="IMG/3.png" class="img-border" alt="img"></span>
+                            </span>
+                            <span class="row">
+                                <span class="col-4 item"> <img src="IMG/4.png" class="img-border" alt="img"></span>
+                                <span class="col-4 item"> <img src="IMG/5.png" class="img-border" alt="img"></span>
+                                <span class="col-4 item"> <img src="IMG/6.png" class="img-border" alt="img"></span>
+                            </span>
+                            <span class="row">
+                                <span class="col-4 item"> <img src="IMG/7.png" class="img-border" alt="img"></span>
+                                <span class="col-4 item"> <img src="IMG/8.png" class="img-border" alt="img"></span>
+                                <span class="col-4 item"> <img src="IMG/9.png" class="img-border" alt="img"></span>
+                            </span>
+                            <span class="row">
+                                <span class="col-4 item"> <img src="IMG/10.png" class="img-border" alt="img"></span>
+                                <span class="col-4 item"> <img src="IMG/11.png" class="img-border" alt="img"></span>
+                                <span class="col-4 item"> <img src="IMG/12.png" class="img-border" alt="img"></span>
+                            </span>
+                            <span class="row">
+                                <span class="col-4 item"> <img src="IMG/13.png" class="img-border" alt="img"></span>
+                            </span>
+
+                            <hr id="hr">
+                            <span class="row">
+                                <span class="more p-2">More</span>
+                            </span>
+
+                            <span class="row">
+                                <span class="col-4 item"> <img src="IMG/14.png" class="img-border" alt="img"></span>
+                                <span class="col-4 item"> <img src="IMG/15.png" class="img-border" alt="img"></span>
+                                <span class="col-4 item"> <img src="IMG/16.png" class="img-border" alt="img"></span>
+                            </span>
+                            <span class="row">
+                                <span class="col-4 item"> <img src="IMG/17.png" class="img-border" alt="img"></span>
+                                <span class="col-4 item"> <img src="IMG/18.png" class="img-border" alt="img"></span>
+                                <span class="col-4 item"> <img src="IMG/19.png" class="img-border" alt="img"></span>
+                            </span>
+                            <span class="row">
+                                <span class="col-4 item"> <img src="IMG/20.png" class="img-border" alt="img"></span>
+                                <span class="col-4 item"> <img src="IMG/21.png" class="img-border" alt="img"></span>
+                                <span class="col-4 item"> <img src="IMG/22.png" class="img-border" alt="img"></span>
+                            </span>
+                            <span class="row">
+                                <span class="col-4 item"> <img src="IMG/23.png" class="img-border" alt="img"></span>
+                            </span>
+                            <span class="footerdropDownText"><a href="https://www.google.com/intl/en/options/">Even more from Google</a></SPAN>
+                        </span>
+                    </span>
+                </span>
+                <span class="p-3">
+                    <img src="IMG/avatar.png" class="avatar" alt="Avatar">
+                    <span class="dialogBox">
+                        <span>
+                            <img src="IMG/avatar.png" class="avatar2" alt="Avatar">
+                            <span class="userName">
+                                AmirReza Safehian
+                                <br>
+                                safehiana@gmail.com
+                            </span>
+                            <button class="btn btn-primary btn-sm acc-btn">Google Account</button>
+                        </span>
+                        <span class="avatarItem1">
+                            <span> <img src="IMG/avatar.png" class="avatar3" alt="Avatar"></span>
+                            <span class="f-7"> info
+                            </span>
+                        </span>
+                        <span class="avatarItem2">
+                            <span> <img src="IMG/avatar.png" class="avatar3" alt="Avatar"></span>
+                            <span class="f-7"> info
+                            </span>
+                        </span>
+                        <span class=" d-flex align-items-center justify-content-between avatarFooter">
+                            <button class="btn btn-sm" id="addAcc">Add Account</button>
+                            <button class="btn btn-sm" id="signup">Sign out</button>
+                        </span>
+                    </span>
+                </span>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="trn col-12">
+            Translate
+        </div>
+    </div>
+
+    <div class="row p-3">
+        <div class="col-6">
+            <button class="btn btn-gray btn-sm" id="en1">English</button>
+            <button class="btn btn-gray btn-sm" id="fa1">Persian</button>
+            <button class="btn btn-gray btn-sm right"><i class="fas fa-exchange-alt" id="exchange"></i></button>
+
+            <div class="form-group">
+                <label for="l1"></label>
+                <textarea class="form-control" rows="5" id="l1"></textarea>
+            </div>
+            <p class="gray f-13"> Acceptable-Words : apple, boy, university, lawyer, dadsun</p>
+        </div>
+
+        <div class="col-6">
+            <button class="btn btn-gray btn-sm" id="fa2">Persian</button>
+            <button class="btn btn-gray btn-sm" id="en2">English</button>
+            <button class="btn btn-primary btn-sm" id="translate">Translate</button>
+            <div class="form-group">
+                <label for="l2"></label>
+                <textarea class="form-control" rows="5" id="l2"></textarea>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="row">
+        <div class="hover_bkgr_fricc">
+            <span class="helper"></span>
+            <div>
+                <!--Here POP-UP-->
+                <!--<div class="popupCloseButton"></div>-->
+                <div class="pop-header">
+                    Send feedback
+                </div>
+                <div class="form-group">
+                    <label for="popupTextarea"></label>
+                    <textarea class="form-control" rows="5" id="popupTextarea" placeholder="Describe your issue or share your ideas"></textarea>
+                </div>
+                <div>
+                    <img src="IMG/popupImg.png" alt="popupIMG" id="popupImg">
+                </div>
+                <div id="popupText">
+                    Go to the <a href="https://support.google.com/legal/answer/3110420?hl=en">Legal Help page</a> to request content changes for legal reasons. Some
+                    <a href="https://translate.google.com/#info">account and system information</a> may be sent to Google. We will use the information you give us to help address technical issues and to improve our services, subject to our
+                    <a href="https://www.google.com/intl/en/policies/privacy/">Privacy Policy</a> and <a href="https://www.google.com/intl/en/policies/terms/">Terms of Service</a>.
+                    <hr>
+                </div>
+                <button class="popupSendButton btn btn-sm">
+                    SEND
+                </button>
+                <button class="popupCloseButton btn btn-sm">
+                    CANCEL
+                </button>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="row">
+        <div class="footer d-flex align-items-center justify-content-between col-12">
+            <div>
+                <a href="http://www.google.com/url?rs=rssf&q=http://translate.google.com/about/intl/en_ALL/" class="p-3 f-11 footerLinks">
+                    About Google Translate
+                </a>
+                <a href="http://www.google.com/url?rs=rssf&q=//translate.google.com/community" class="p-3 f-11 footerLinks">
+                    Community
+                </a>
+                <a href="http://www.google.com/url?rs=rssf&q=http://www.google.com/mobile/translate/" class="p-3 f-11 footerLinks">
+                    Mobile
+                </a>
+
+                <span>
+                <a href="https://google.com/+GoogleTranslate"><i class="fab fa-google-plus-g p-3 footerLinks"></i></a>
+            </span>
+                <span>
+                <a href="https://googletranslate.blogspot.com/"><i class="fab fa-blogger p-3 footerLinks"></i></a>
+            </span>
+            </div>
+
+            <div>
+                <a href="http://www.google.com/url?rs=rssf&q=http://www.google.com/intl/en/about/%3Futm_source%3Dtranslate.google.com%26utm_medium%3Dreferral%26utm_campaign%3Dtranslate-footer-en" class="p-3 f-13 footerLinks">
+                    About Google
+                </a>
+                <a href="http://www.google.com/url?rs=rssf&q=http://www.google.com/intl/en/policies/" class="p-3 f-11 footerLinks">
+                    Privacy & Terms
+                </a>
+                <a href="http://www.google.com/url?rs=rssf&q=http://www.google.com/intl/en/policies/" class="p-3 f-11 footerLinks">
+                    Help
+                </a>
+                <a class="p-3 f-11 footerLinks trigger_popup_fricc">
+                    <i class="fas fa-comment-alt"></i> Send feedback
+                </a>
+
+            </div>
+        </div>
+    </div>
+
+</div>
+
+
+</body>
+<script src="JS/jquery-3.3.1.js"></script>
+<script src="JS/bootstrap.bundle.min.js"></script>
+<script src="JS/index.js"></script>
+
+</html>
+
+
